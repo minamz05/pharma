@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="838.0" style="-fx-background-color: BFEFEF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharma.StockController">
+   <children>
+      <Text fill="#089e3b" layoutX="36.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTS:" underline="true" wrappingWidth="125.13671875">
+         <font>
+            <Font name="Ebrima Bold" size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TextName" layoutX="24.0" layoutY="120.0" prefHeight="40.0" prefWidth="149.0" promptText="ENTER NAME" />
+      <TextField fx:id="TextRef" layoutX="26.0" layoutY="167.0" prefHeight="40.0" prefWidth="149.0" promptText="ENTER REF" />
+      <TextField fx:id="TextPrice" layoutX="26.0" layoutY="220.0" prefHeight="40.0" prefWidth="149.0" promptText="ENTER PRICE" />
+      <TextField fx:id="TextDCI" layoutX="27.0" layoutY="267.0" prefHeight="40.0" prefWidth="149.0" promptText="ENTER DCI" />
+      <Button fx:id="AddButton" layoutX="61.0" layoutY="483.0" mnemonicParsing="false" onAction="#AddMeds" prefHeight="40.0" prefWidth="80.0" text="ADD" />
+      <Button fx:id="DeleteButton" layoutX="59.0" layoutY="538.0" mnemonicParsing="false" onAction="#DeleteMeds" prefHeight="40.0" prefWidth="80.0" text="DELETE" />
+      <Button fx:id="UpdateButton" layoutX="59.0" layoutY="590.0" mnemonicParsing="false" onAction="#UpdateMeds" prefHeight="40.0" prefWidth="80.0" text="UPDATE" />
+      <TextField fx:id="FilterField" layoutX="343.0" layoutY="43.0" prefHeight="40.0" prefWidth="204.0" promptText="SEARCH" />
+      <TableView fx:id="TableMed" layoutX="205.0" layoutY="120.0" prefHeight="510.0" prefWidth="531.0">
+         <columns>
+            <TableColumn fx:id="ColRef" prefWidth="75.0" text="REF" />
+            <TableColumn fx:id="ColDCI" prefWidth="75.0" text="DCI" />
+            <TableColumn fx:id="ColName" prefWidth="75.0" text="NAME" />
+            <TableColumn fx:id="ColPrice" prefWidth="75.0" text="PRICE" />
+            <TableColumn fx:id="ColQte" prefWidth="75.0" text="QTE" />
+            <TableColumn fx:id="ColDExpd" prefWidth="75.0" text="D.EXPD" />
+            <TableColumn fx:id="ColDPerm" prefWidth="75.0" text="D.PERM" />
+         </columns>
+      </TableView>
+      <TextField fx:id="TextQte" layoutX="27.0" layoutY="318.0" prefHeight="40.0" prefWidth="149.0" promptText="ENTER QTE" />
+      <TextField fx:id="TextDexpd" layoutX="26.0" layoutY="369.0" prefHeight="40.0" prefWidth="149.0" promptText="ENTER D.EXPD" />
+      <TextField fx:id="TextDPerm" layoutX="27.0" layoutY="424.0" prefHeight="40.0" prefWidth="149.0" promptText="ENTER D.PERM" />
+   </children>
+</Pane>
